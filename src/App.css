@@ -1,38 +1,152 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: left;
+  gap: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-container{
+  background-color: rgb(29, 29, 41);
+  background-image: url("img/Cloud-background.343e2b41.png");
+  width: 30%;
+  height: 100%;  
+  padding: 120px 20px; 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  gap: 200px;
+}
+
+.temp{
+  font-size: 60px;
+}
+
+.btn {
+  color: white;
+  font-size: 18px;
+  padding: 18px 12px;
+  background-color: gray;
+  height: 50px;
+}
+
+  .btn:hover{
+    cursor: pointer;
+    background-color: rgb(97, 96, 96);
+  }
+
+.today{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.right-container{
+  background-color: rgb(17, 17, 32);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.right-title{
+  font-size: 25px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.box-container{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.boxes{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box{
+  background-color: rgb(29, 29, 41);
+  width: 300px;
+  height: 150px;
+  border: none;
+  color: rgb(247, 230, 230);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.data{
+  font-size: 25px;
+}
+
+.rang{
+  width: 200px;
+  height: 8px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.rang-color{
+  height: 8px;
+  background-color: yellow;
+  border-radius: 20px;
+}
+
+.temp-change{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(33, 33, 61);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.navbar{
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+input{
+  width: 200px;
+  padding: 8px 0;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.search{
+  width: 200px;
+  padding: 8px 0;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  border: none;
+}
+
+.searchbar-container{
+  background-color: rgb(29, 29, 41);;
+  width: 30%;
+  height: 100%;
+  padding: 0 20px 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+}
+
+.close{
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
 }
